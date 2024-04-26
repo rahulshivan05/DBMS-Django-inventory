@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block active %}active{% endblock %}
+
+{% block content %}
+<div class="container mt-3">
+    <h1>Welcome to <b>Inventry Control Management - ICM</b></h1>
+    <h2>Introduction:</h2>
+    <p>Inventory control management is the process of managing and
+        optimizing a company’s inventory levels to ensure that the right
+        products are available at the right time and in the right quantity.
+        It involves tracking inventory levels, forecasting demand, and making
+        strategic decisions about inventory ordering, storage and usages.
+    </p>
+    <img src="{% static 'images/1.jpg' %}" alt="" srcset="" width="400" height="300"> <br />
+    <p>Effective inventory control management can provide a number of
+        benefits to a business, including reducing inventory holding costs,
+        improving customer satisfaction, and increasing efficiency in inventory
+        management.
+    </p>
+    <h2>Several Different Methods & Technique Used in ICM</h2>
+    <ul>
+        <li>Just-in-time (JIT) inventory</li>
+        <li>Economic order quantity (EOQ)</li>
+        <li>Material requirements planning (MRP)</li>
+        <li>Vendor-managed inventory (VMI)</li>
+    </ul>
+
+    <h4>Just-in-time (JIT) inventory</h4>
+    <img src="{% static 'images/2.jpg' %}" alt="" srcset="" width="300" height="300"> <br />
+    <h4>Economic order quantity (EOQ)</h4>
+    <img src="{% static 'images/3.webp' %}">
+    <br />
+
+    <p>Additionally, companies may use a combination of physical inventory
+        counting, sales and purchase records, automated inventory management
+        system, supplier and vendor reports, customer feedback, and market
+        research to gather data.
+    </p>
+    <h2>Benefits of Inventory Control Management</h2>
+    <ul>
+        <li>Improved inventory accuracy</li>
+        <li>Reduced inventory holding costs</li>
+        <li>Increase efficiency in inventory management</li>
+        <li>Better visibility into inventory levels and usage</li>
+        <li>Improved customer satisfaction</li>
+    </ul>
+    <p>Overall, effective inventory control management can help businesses to
+        reduce costs, improve efficiency, and enhance the customer experience.</p>
+    <h2>Challenges of Inventory Control Management</h2>
+</div>
+{% endblock %}

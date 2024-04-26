@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>Welcome to Inventry Control Management (ICM)</h1>
+<h1>Product List</h1>
+<ul>
+    {% for product in products %}
+    <li><a href="{% url 'inventory:product_detail' product.pk %}">{{ product.name }}</a></li>
+    {% empty %}
+    <li>No products available.</li>
+    {% endfor %}
+</ul>
+{% endblock %}

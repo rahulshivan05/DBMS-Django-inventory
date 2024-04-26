@@ -1,0 +1,15 @@
+<!-- supplier_list.html -->
+
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>Suppliers List</h1>
+<ul>
+    {% for supplier in suppliers %}
+    <li>{{ supplier.name }} - {{ supplier.contact_phone }}</li>
+    {% empty %}
+    <li>No suppliers found.</li>
+    <li><a href="{% url 'inventory:add_supplier' %}">Add Supplier</a></li>
+    {% endfor %}
+</ul>
+{% endblock %}

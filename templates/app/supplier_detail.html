@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h1>Supplier Detail of {{supplier.name}}</h1>
+{% for supplier in suppliers %}
+<p>{{supplier.name}}</p>
+<p>{{supplier.address}}</p>
+<p>{{supplier.contact_name}}</p>
+<p>{{supplier.contact_email}}</p>
+<p>{{supplier.contact_phone}}</p>
+{% empty %}
+{% endfor %}
+
+{% endblock %}

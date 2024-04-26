@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h2>Product details - {{product.name}}</h2>
+
+<!-- product_detail.html -->
+<p>Description: {{ product.description }}</p>
+<p>Category: {{ product.category }}</p>
+<p>Unit Price: {{ product.unit_price }}</p>
+<p>Supplier: {{ product.supplier.name }}</p>
+<p>Quantity in Stock: {{ product.quantity_in_stock }}</p>
+
+<h3>Make Transaction of the {{product.name}}</h3>
+<li><a href="{% url 'inventory:transaction_create' %}">{{ product.name }}</a></li>
+
+{% endblock %}

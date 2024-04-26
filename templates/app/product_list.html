@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<!-- inventory/product_list.html -->
+<h1>Product List</h1>
+<ul>
+    {% for product in products %}
+    <li><a href="{% url 'inventory:product_detail' product.pk %}">{{ product.name }}</a></li>
+    {% empty %}
+    <li>No products available.</li>
+    {% endfor %}
+</ul>
+{% endblock %}
